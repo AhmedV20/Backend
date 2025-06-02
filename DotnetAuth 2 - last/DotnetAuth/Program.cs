@@ -33,6 +33,10 @@ builder.Services.AddProblemDetails();
 
 builder.Services.AddControllers();
 
+// Add Health Checks
+builder.Services.AddHealthChecks()
+    .AddDbContext<ApplicationDbContext>();
+
 // Configure static files
 builder.Services.AddDirectoryBrowser();
 
