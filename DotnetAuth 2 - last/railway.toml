@@ -1,0 +1,16 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+healthcheckPath = "/health"
+healthcheckTimeout = 300
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 3
+
+[[services]]
+name = "dotnetauth-api"
+
+[services.variables]
+ASPNETCORE_ENVIRONMENT = "Production"
+ASPNETCORE_URLS = "http://0.0.0.0:$PORT"

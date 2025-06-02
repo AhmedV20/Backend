@@ -1,0 +1,32 @@
+# .NET build output
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Configuration files with secrets
+appsettings.Development.json
+appsettings.Production.json
+*.pfx
+*.key
+
+# Environment variables
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Local development files
+*.local
