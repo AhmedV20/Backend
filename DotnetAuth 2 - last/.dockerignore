@@ -1,0 +1,56 @@
+# .dockerignore
+
+# Ignore build outputs
+**/bin/
+**/obj/
+**/out/
+
+# Ignore Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore Git files
+.git/
+.gitignore
+.gitattributes
+
+# Ignore documentation
+README.md
+*.md
+
+# Ignore test files
+**/TestResults/
+
+# Ignore temporary files
+**/.tmp/
+**/temp/
+
+# Ignore node modules (if any)
+**/node_modules/
+
+# Ignore logs
+**/logs/
+*.log
+
+# Ignore OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore package files
+*.nupkg
+*.snupkg
+
+# Ignore deployment scripts
+deploy-to-railway.ps1

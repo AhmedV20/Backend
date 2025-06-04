@@ -7,6 +7,16 @@
 - GitHub repository with your code
 - Your current configuration values
 
+## 🔧 Build Error Fix
+
+If you encounter the error: `"dotnet restore" did not complete successfully: exit code: 1`
+
+**Solution:** The project now includes two Dockerfiles:
+- `Dockerfile` - Standard multi-stage build
+- `Dockerfile.railway` - Railway-optimized build (recommended)
+
+The `railway.toml` is configured to use `Dockerfile.railway` by default.
+
 ### 2. Deploy to Railway
 
 1. **Connect to Railway**
