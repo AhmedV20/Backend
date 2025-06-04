@@ -1,6 +1,6 @@
 [build]
 builder = "dockerfile"
-dockerfilePath = "Dockerfile.railway"
+dockerfilePath = "Dockerfile"
 
 [deploy]
 healthcheckPath = "/health"
@@ -8,10 +8,5 @@ healthcheckTimeout = 300
 restartPolicyType = "on_failure"
 restartPolicyMaxRetries = 3
 
-[[services]]
-name = "dotnetauth-api"
-
-[services.variables]
+[variables]
 ASPNETCORE_ENVIRONMENT = "Production"
-ASPNETCORE_URLS = "http://0.0.0.0:8080"
-PORT = "8080"

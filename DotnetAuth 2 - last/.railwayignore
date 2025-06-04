@@ -1,0 +1,20 @@
+# Railway ignore file
+
+# Build outputs
+**/bin/
+**/obj/
+
+# IDE files
+.vs/
+.vscode/
+*.user
+
+# Documentation
+*.md
+!README.md
+
+# Scripts
+deploy-to-railway.ps1
+
+# Alternative dockerfiles
+Dockerfile.railway
